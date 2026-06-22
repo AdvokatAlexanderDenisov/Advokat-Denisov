@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Адвокат Денисов Олександр Сергійович | Правнича допомога</title>
+<title>Адвокат Денисов Олександр Сергійович</title>
 
 <style>
 
@@ -17,54 +16,72 @@
 
 body{
     font-family: Georgia, serif;
-    background:#0b1f5b;
+    background:linear-gradient(180deg,#112f86 0%,#081a4a 100%);
     color:#ffffff;
     line-height:1.7;
+    border:3px solid #d4af37;
+    margin:12px;
+    padding:12px;
 }
 
 header{
     text-align:center;
-    padding:80px 20px;
-    background:#0b1f5b;
+    padding:60px 20px;
+}
+
+.hero{
+    max-width:1100px;
+    margin:auto;
+    border:2px solid #d4af37;
+    padding:50px 30px;
+    background:rgba(0,0,0,.15);
+    box-shadow:0 0 35px rgba(212,175,55,.2);
 }
 
 .logo{
-    font-size:90px;
+    font-size:100px;
     color:#d4af37;
 }
 
-header h1{
+h1{
     color:#d4af37;
-    font-size:54px;
-    letter-spacing:4px;
-    margin:10px 0;
+    font-size:60px;
+    letter-spacing:6px;
+    margin-top:10px;
 }
 
 .subtitle{
-    font-size:26px;
-    margin-bottom:10px;
+    font-size:28px;
+    margin-top:15px;
+}
+
+.phone-main{
+    color:#d4af37;
+    font-size:52px;
+    font-weight:bold;
+    margin:20px 0;
 }
 
 .location{
     font-size:18px;
-    opacity:0.9;
+    opacity:.9;
 }
 
 .gold-line{
-    width:220px;
+    width:240px;
     height:2px;
     background:#d4af37;
     margin:25px auto;
 }
 
 .container{
-    width:90%;
+    width:92%;
     max-width:1200px;
     margin:auto;
 }
 
 .section{
-    background:#10296f;
+    background:#0d266e;
     border:1px solid #d4af37;
     border-radius:12px;
     padding:40px;
@@ -76,7 +93,7 @@ h2{
     text-align:center;
     margin-bottom:25px;
     text-transform:uppercase;
-    letter-spacing:1px;
+    letter-spacing:2px;
 }
 
 .services{
@@ -86,11 +103,21 @@ h2{
 }
 
 .card{
-    background:#0b1f5b;
+    background:#081a4a;
     border:1px solid #d4af37;
     border-radius:10px;
     padding:25px;
     text-align:center;
+    min-height:170px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 20px rgba(212,175,55,.25);
 }
 
 .btn{
@@ -98,15 +125,14 @@ h2{
     margin:10px;
     padding:15px 30px;
     background:#d4af37;
-    color:#0b1f5b;
+    color:#081a4a;
     text-decoration:none;
     font-weight:bold;
     border-radius:30px;
-    transition:0.3s;
 }
 
 .btn:hover{
-    transform:translateY(-2px);
+    opacity:.9;
 }
 
 .contact{
@@ -114,48 +140,50 @@ h2{
 }
 
 .phone{
-    font-size:34px;
     color:#d4af37;
+    font-size:36px;
     font-weight:bold;
     margin:20px 0;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    border-top:1px solid #d4af37;
-    margin-top:40px;
 }
 
 a{
     color:#ffffff;
 }
 
-@media(max-width:768px){
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #d4af37;
+    margin-top:30px;
+}
 
-    header{
-        padding:60px 20px;
-    }
+@media(max-width:768px){
 
     .logo{
         font-size:70px;
     }
 
-    header h1{
-        font-size:36px;
+    h1{
+        font-size:38px;
+        letter-spacing:2px;
     }
 
     .subtitle{
         font-size:20px;
     }
 
+    .phone-main{
+        font-size:30px;
+    }
+
     .phone{
-        font-size:26px;
+        font-size:24px;
     }
 
     .section{
         padding:25px;
     }
+
 }
 
 </style>
@@ -166,7 +194,13 @@ a{
 
 <header>
 
-<div class="logo">⚖</div>
+<div class="hero">
+
+<div class="logo">
+⚖
+</div>
+
+<div class="gold-line"></div>
 
 <h1>АДВОКАТ</h1>
 
@@ -174,16 +208,25 @@ a{
 Денисов Олександр Сергійович
 </p>
 
+<div class="phone-main">
++38 (050) 528-91-21
+</div>
+
 <p class="location">
-м. Шахтарське, Синельниківський район,
-Дніпропетровська область
+м. Шахтарське, Синельниківський район, Дніпропетровська область
 </p>
 
 <div class="gold-line"></div>
 
 <a class="btn" href="tel:+380505289121">
-Записатися на консультацію
+Зателефонувати
 </a>
+
+<a class="btn" href="viber://chat?number=%2B380505289121">
+Viber
+</a>
+
+</div>
 
 </header>
 
@@ -194,19 +237,13 @@ a{
 <h2>Професійна правнича допомога</h2>
 
 <p>
-Вітаю!
-</p>
-
-<br>
-
-<p>
 Я, Денисов Олександр Сергійович, адвокат із багаторічним досвідом роботи у сфері права.
 </p>
 
 <br>
 
 <p>
-З 2010 року надаю кваліфіковану правничу допомогу громадянам та юридичним особам, здійснюю представництво інтересів клієнтів у судах та державних органах.
+Надаю кваліфіковану правничу допомогу, здійснюю представництво інтересів клієнтів у судах та державних органах, а також забезпечую комплексний правовий супровід у різних категоріях справ.
 </p>
 
 <br>
@@ -230,11 +267,11 @@ a{
 <div class="services">
 
 <div class="card">
-Допомога при призначенні пенсії та оскарження рішень Пенсійного фонду України
+Пенсійні спори та оскарження рішень Пенсійного фонду
 </div>
 
 <div class="card">
-Сімейні спори, розірвання шлюбу, стягнення аліментів та поділ майна
+Сімейні спори, розірвання шлюбу, аліменти та поділ майна
 </div>
 
 <div class="card">
@@ -246,11 +283,11 @@ a{
 </div>
 
 <div class="card">
-Надання правової допомоги у справах про ДТП
+Правова допомога у справах про ДТП
 </div>
 
 <div class="card">
-Юридичні консультації та правовий аналіз документів
+Юридичні консультації та аналіз документів
 </div>
 
 </div>
@@ -268,7 +305,7 @@ a{
 <br>
 
 <p>
-Надаю правову допомогу фізичним та юридичним особам, здійснюю підготовку процесуальних документів, представництво інтересів клієнтів у судах та органах державної влади.
+Надаю правову допомогу фізичним та юридичним особам, здійснюю підготовку процесуальних документів та представництво інтересів клієнтів у судах.
 </p>
 
 <br>
