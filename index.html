@@ -1,3 +1,12 @@
+```html
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Адвокат Денисов Олександр Сергійович</title>
+
 <style>
 
 *{
@@ -32,8 +41,6 @@ border:1px solid #d4af37;
 pointer-events:none;
 }
 
-/* HERO */
-
 .hero{
 position:relative;
 min-height:430px;
@@ -51,10 +58,10 @@ content:"";
 position:absolute;
 top:0;
 right:0;
-width:48%;
+width:45%;
 height:100%;
 background:url("images/columns.png") right center no-repeat;
-background-size:cover;
+background-size:contain;
 opacity:.35;
 pointer-events:none;
 }
@@ -68,10 +75,8 @@ z-index:2;
 }
 
 .hero-logo img{
-width:360px;
-background:transparent;
-mix-blend-mode:screen;
-filter:drop-shadow(0 0 18px rgba(212,175,55,.5));
+width:300px;
+filter:drop-shadow(0 0 20px rgba(212,175,55,.5));
 }
 
 .hero-content{
@@ -82,24 +87,24 @@ max-width:900px;
 }
 
 .title{
-font-size:110px;
+font-size:95px;
 font-weight:bold;
 color:#d4af37;
 line-height:1;
 }
 
 .name{
-font-size:54px;
+font-size:46px;
 margin-top:10px;
 }
 
 .address{
-font-size:24px;
+font-size:22px;
 margin-top:15px;
 }
 
 .phone{
-font-size:82px;
+font-size:72px;
 font-weight:bold;
 color:#d4af37;
 margin-top:25px;
@@ -114,10 +119,10 @@ flex-wrap:wrap;
 }
 
 .btn{
-padding:18px 42px;
+padding:16px 38px;
 background:linear-gradient(#f4d16e,#d4af37);
 color:#000;
-font-size:30px;
+font-size:26px;
 font-weight:bold;
 text-decoration:none;
 border-radius:10px;
@@ -125,16 +130,12 @@ border:1px solid #f8de88;
 box-shadow:0 0 12px rgba(212,175,55,.35);
 }
 
-/* SECTION */
-
 .section-title{
 text-align:center;
-font-size:72px;
+font-size:64px;
 color:#d4af37;
 margin:30px 0;
 }
-
-/* SERVICES */
 
 .services{
 display:grid;
@@ -146,17 +147,15 @@ padding-bottom:15px;
 .service{
 border:2px solid #d4af37;
 background:#050505;
-min-height:240px;
-padding:25px;
+min-height:220px;
+padding:20px;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-font-size:24px;
+font-size:22px;
 line-height:1.4;
 }
-
-/* BOTTOM */
 
 .bottom{
 display:grid;
@@ -175,13 +174,11 @@ background:#050505;
 }
 
 .box h2{
-font-size:58px;
+font-size:54px;
 text-align:center;
 color:#d4af37;
 margin-bottom:25px;
 }
-
-/* ABOUT */
 
 .about{
 display:flex;
@@ -192,21 +189,17 @@ gap:25px;
 width:180px;
 height:180px;
 object-fit:contain;
-background:transparent;
-mix-blend-mode:screen;
 }
 
 .about-text{
-font-size:30px;
+font-size:28px;
 line-height:1.7;
 }
-
-/* CONTACTS */
 
 .contacts{
 position:relative;
 min-height:320px;
-padding-right:300px;
+padding-right:280px;
 }
 
 .contacts:after{
@@ -214,16 +207,15 @@ content:"";
 position:absolute;
 right:0;
 bottom:0;
-width:280px;
+width:250px;
 height:100%;
 background:url("images/themis.png") bottom right no-repeat;
 background-size:contain;
-mix-blend-mode:screen;
 opacity:.95;
 }
 
 .contacts-text{
-font-size:30px;
+font-size:28px;
 line-height:2;
 position:relative;
 z-index:2;
@@ -238,10 +230,224 @@ footer{
 margin-top:15px;
 padding:20px;
 text-align:center;
-font-size:30px;
+font-size:26px;
 color:#d4af37;
 border-top:1px solid #d4af37;
 background:#050505;
 }
 
+@media(max-width:1200px){
+
+.hero{
+padding:30px;
+flex-direction:column;
+}
+
+.hero-logo{
+position:relative;
+left:auto;
+top:auto;
+transform:none;
+margin-bottom:20px;
+}
+
+.hero:after{
+display:none;
+}
+
+.services{
+grid-template-columns:repeat(2,1fr);
+}
+
+.bottom{
+grid-template-columns:1fr;
+}
+
+.contacts{
+padding-right:0;
+}
+
+.contacts:after{
+display:none;
+}
+
+.title{
+font-size:60px;
+}
+
+.phone{
+font-size:42px;
+}
+
+}
+
+@media(max-width:700px){
+
+.services{
+grid-template-columns:1fr;
+}
+
+.title{
+font-size:42px;
+}
+
+.name{
+font-size:28px;
+}
+
+.phone{
+font-size:32px;
+}
+
+.section-title{
+font-size:42px;
+}
+
+.btn{
+font-size:18px;
+padding:12px 20px;
+}
+
+.about{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+.about-text{
+font-size:22px;
+}
+
+.contacts-text{
+font-size:22px;
+text-align:center;
+}
+
+.box h2{
+font-size:36px;
+}
+
+}
+
 </style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<header class="hero">
+
+<div class="hero-logo">
+<img src="images/logo.png" alt="Логотип">
+</div>
+
+<div class="hero-content">
+
+<div class="title">АДВОКАТ</div>
+
+<div class="name">
+Денисов Олександр Сергійович
+</div>
+
+<div class="address">
+м. Шахтарське, Синельниківський район, Дніпропетровська область
+</div>
+
+<div class="phone">
++38 (050) 528-91-21
+</div>
+
+<div class="buttons">
+
+<a class="btn" href="tel:+380505289121">
+📞 ЗАТЕЛЕФОНУВАТИ
+</a>
+
+<a class="btn" href="viber://chat?number=%2B380505289121">
+VIBER
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<h2 class="section-title">ПОСЛУГИ</h2>
+
+<section class="services">
+
+<div class="service">Допомога при призначенні пенсії та оскарження рішень Пенсійного фонду України</div>
+
+<div class="service">Сімейні спори, розірвання шлюбу, стягнення аліментів та поділ майна</div>
+
+<div class="service">Спадкові справи та захист спадкових прав</div>
+
+<div class="service">Представництво інтересів у судах усіх інстанцій</div>
+
+<div class="service">Надання правової допомоги у справах про ДТП</div>
+
+<div class="service">Юридичні консультації та правовий аналіз документів</div>
+
+</section>
+
+<section class="bottom">
+
+<div class="box">
+
+<h2>ПРО АДВОКАТА</h2>
+
+<div class="about">
+
+<img src="images/logo.png" alt="logo">
+
+<div class="about-text">
+
+Стаж професійної діяльності у сфері права — понад 15 років.<br><br>
+
+У своїй роботі керуюся принципами професіоналізму, конфіденційності, відповідальності та індивідуального підходу до кожної справи.<br><br>
+
+Моя мета — забезпечити надійний правовий захист та досягнення найкращого результату для клієнта.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="box">
+
+<h2>КОНТАКТИ</h2>
+
+<div class="contacts">
+
+<div class="contacts-text">
+
+📞 +38 (050) 528-91-21<br>
+
+💬 Viber<br>
+
+✉ alexanderdenisov@ukr.net<br><br>
+
+📍 м. Шахтарське<br>
+Синельниківський район<br>
+Дніпропетровська область
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Денисов Олександр Сергійович. Всі права захищені.
+</footer>
+
+</div>
+
+</body>
+</html>
+```
